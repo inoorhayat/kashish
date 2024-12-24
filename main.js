@@ -16,6 +16,23 @@ function handleMusic(play) {
     fetchData(); // This will trigger the animations after loading the data
 }
 
+//slideshow
+// Add this to your script.js
+
+document.addEventListener('DOMContentLoaded', function () {
+    const slides = document.querySelectorAll('.background-slide');
+    let currentSlide = 0;
+
+    function showNextSlide() {
+        slides[currentSlide].style.opacity = 0;
+
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].style.opacity = 1;
+    }
+
+    setInterval(showNextSlide, 6000); // Adjust the interval as needed
+});
+
 const fetchData = () => {
     fetch("customize.json")
       .then(data => data.json())

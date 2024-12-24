@@ -80,29 +80,29 @@ body {
 
 @keyframes backgroundSlideshow {
     0% {
-        opacity: 0.5;
-        filter: blur(9px);
-        transform: scale(1.05);
+        opacity: 0.9;
+        filter: blur(2px);
+        transform: scale(1.0);
     }
     4% {
         opacity: 0.8;
         filter: blur(2px);
-        transform: scale(1.05);
+        transform: scale(1.06);
     }
     20% {
         opacity:  1;
         filter: blur(4px);
-        transform: scale(1.10);
+        transform: scale(1.07);
     }
     24% {
         opacity: 0.8;
         filter: blur(8px);
-        transform: scale(1.15);
+        transform: scale(1.08);
     }
     100% {
-        opacity: 0.5;
+        opacity: 0.7;
         filter: blur(18px);
-        transform: scale(1.20);
+        transform: scale(1.10);
     }
 }
 
@@ -235,7 +235,7 @@ body {
 .six .hat {
     position: fixed;
     width: 82px;
-    top: 30px;
+    top: 130px;
     left: 100px;
 }
 
@@ -245,11 +245,11 @@ body {
 }
 
 .baloons img:nth-child(even) {
-    left: -10%;
+    left: 1%;
 }
 
 .baloons img:nth-child(odd) {
-    right: -10%;
+    right: 1%;
 }
 
 .baloons img:nth-child(3n + 0) {
@@ -348,30 +348,35 @@ body {
 /* Media Queries */
 @media screen and (max-height: 1000px) {
     .six .hat {
-        left: 40%;
+        top: 170px;
+        left: 40px;
     }
 }
 
 @media screen and (max-height: 800px) {
     .six .hat {
-        left: 37%;
+        top: 100px;
+        left: 40px;
     }
 }
 
 @media screen and (max-height: 700px) {
     .six .hat {
-        left: 32%;
+        top: 120px;
+        left: 40px;
     }
 }
 
 @media screen and (max-height: 850px) and (max-width: 450px) {
     .six .hat {
-        left: 32%;
+        top: 10px;
+        left: 90px;
     }
 }
 
 @media screen and (max-width: 500px) {
     .container {
+        height: 100vh;
         width: 90%;
     }
 
@@ -393,8 +398,9 @@ body {
     }
 
     .six .hat {
+        position: absolute;
         width: 50px;
-        top: -20px;
+        top: -45px;
     }
 
     .wish-hbd {
