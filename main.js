@@ -277,13 +277,13 @@ const fetchData = () => {
                 visibility: "visible",
                 opacity: 0,
                 scale: 80,
-                repeat: 2,
-                repeatDelay: 1.4,
-                ease: Power3.easeOut
+                repeat: 1,
+                repeatDelay: .2,
+                ease: Power2.easeOut
             },
-            0.7
+            0.2
         )
-        .to(".six", 0.5, {
+        .to(".six", 0.7, {
             opacity: 0,
             y: 30,
             zIndex: "-1",
@@ -292,7 +292,7 @@ const fetchData = () => {
         .staggerFrom(".nine p", 1, ideaTextTrans, 1.2)
         .to(".last-smile", 0.5, {
             rotation: 90,
-            ease: Power3.easeOut
+            ease: Power2.easeOut
         }, "+=1");
   
     // Restart Animation on click
