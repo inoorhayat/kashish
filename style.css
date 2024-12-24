@@ -334,12 +334,23 @@ body {
 }
 
 .nine p {
+    margin-top: -100px;
+    padding: 10px;
     font-size: 2rem;
     font-weight: lighter;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
 
+.last-smile{
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+}
+
+
 #replay {
+    margin-top: -0px;
+    padding: 10px;
     z-index: 3;
     cursor: pointer;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
